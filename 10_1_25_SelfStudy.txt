@@ -1,0 +1,60 @@
+First_Class
+
+public class First {
+
+	public static void main(String[] args) {
+		
+	     int sub1 = 88;                                                   
+	     int sub2 = 80;
+	     int sub3 = 78;
+	     int sub4 = 44;
+	     int sub5 = 68;
+	     
+	     int total = (sub1+sub2+sub3+sub4+sub5);    
+	     
+	     System.out.println("Total : "+ total);  
+	     
+	    float p;
+	    p=((float)total/500)*100;
+	    
+	    System.out.println("Percentage:"+ p);
+	}
+
+}
+Output:
+Total : 358
+Percentage:71.6
+
+
+
+Area_Class:
+
+package Anudip_Study;
+
+public class Area {
+
+	public static void main(String[] args) {
+		int length = 5;
+		int breadth = 10;
+		
+		int area_rectangle = (length * breadth);
+		System.out.println("Area of Rectangle : "+ area_rectangle );
+		
+		int b=12,h=6;
+		float area_triangle=(float) ((0.5)*12*6);
+		System.out.println("Area of triangle:" +area_triangle);
+		
+		int s=12;
+		System.out.println("Area of square:"+(s*s));
+		
+		int r=4;
+		System.out.println("Area of circle:"+(float)(3.14*r*r));
+	}
+
+}
+
+Output:
+Area of Rectangle : 50
+Area of triangle:36.0
+Area of sqaure:144
+Area of circle:50.24
