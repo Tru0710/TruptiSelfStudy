@@ -1,0 +1,56 @@
+package Labs;
+
+public class First_Lab {
+
+	public static void main(String[] args) {
+		// simple printing Hello World
+		System.out.println("Hello World!");
+		
+		// JAVA PRIMITIVE DATATYPES
+		
+		 //Integer datatype
+		byte b=10; // Byte 
+		short t=1200;
+		int a=100220;
+		long l=120011223L;// Long datatype
+		
+		boolean c=true;// boolean
+		
+		float f=10.2f; //float datatype
+		double d=120.3445;// double datatype
+		
+		char c1='A';
+		
+		// Printing all the values of above all variables..
+		
+		System.out.println("Byte: "+b);
+		System.out.println("Short: "+t);
+		System.out.println("Integer: "+a);
+		System.out.println("Long: "+l);
+		
+		System.out.println("Boolean: "+c);
+		
+		System.out.println("Float: "+f);
+		System.out.println("Double: "+d);
+		
+		System.out.println("Char: "+c1);
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+OUTPUT:
+Hello World
+Byte: 10
+Short: 1200
+Integer: 100220
+Long: 120011223
+Boolean: true
+Float: 10.2
+Double: 120.3445
+Char: A
