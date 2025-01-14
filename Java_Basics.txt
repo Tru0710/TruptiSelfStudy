@@ -1,0 +1,200 @@
+Program1:
+
+package Labs;
+
+import java.util.Scanner;
+
+public class Java_Basics {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a,b;
+		int n1=6;
+		while(n1>1)
+		{
+		System.out.println("1.Addition\n2.Substaraction\n3.Multiplication\n4.Division\n5.Moduls");
+		System.out.println("Enter the choice which you want to operation on operands like 1 for addition..:");
+		int n=sc.nextInt();// Reading n value which will be particular operation 
+		switch(n) //switch case statement
+		{
+		case 1:
+			System.out.println("Enter the two numbers:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Addition of two numbers is: "+(a+b));
+			break;
+			
+		case 2:
+			System.out.println("Enter the two numbers:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Substraction of two numbers is: "+(a-b));
+			break;
+			
+		case 3:
+			System.out.println("Enter the two numbers:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Multiplication of two numbers is: "+(a*b));
+			break;
+			
+		case 4:
+			System.out.println("Enter the two numbers:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Division of two numbers is: "+(a/b));
+			break;
+			
+		case 5:
+			System.out.println("Enter the two numbers:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Mod of two numbers is: "+(a%b));
+			break;
+		default:
+			System.out.println("Please enter the valid choice..");
+		}
+		n1=n1--;// decrementing n value by 1;
+	}
+	}
+
+}
+
+OUTPUT:
+1.Addition
+2.Substaraction
+3.Multiplication
+4.Division
+5.Moduls
+Enter the choice which you want to operation on operands like 1 for addition..:
+1
+Enter the two numbers:
+10
+20
+Addition of two numbers is: 30
+1.Addition
+2.Substaraction
+3.Multiplication
+4.Division
+5.Moduls
+Enter the choice which you want to operation on operands like 1 for addition..:
+2
+Enter the two numbers:
+90
+10
+Substraction of two numbers is: 80
+1.Addition
+2.Substaraction
+3.Multiplication
+4.Division
+5.Moduls
+Enter the choice which you want to operation on operands like 1 for addition..:
+3
+Enter the two numbers:
+10
+20
+Multiplication of two numbers is: 200
+1.Addition
+2.Substaraction
+3.Multiplication
+4.Division
+5.Moduls
+Enter the choice which you want to operation on operands like 1 for addition..:
+4
+Enter the two numbers:
+10
+2
+Division of two numbers is: 5
+1.Addition
+2.Substaraction
+3.Multiplication
+4.Division
+5.Moduls
+Enter the choice which you want to operation on operands like 1 for addition..:
+5
+Enter the two numbers:
+10
+5
+Mod of two numbers is: 0
+
+
+Program2:
+
+package Labs;
+
+import java.util.Scanner;
+
+public class Bank_Java_Basics {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int amount=2000;
+		int n1=4;
+		int amt=0;
+		while(n1>1)
+		{
+		System.out.println("1.Deposit\n2.Withdraw\n3.Check balance");
+		System.out.println("Enter the choice:");
+		int n=sc.nextInt();
+		switch(n)
+		{
+		case 1:
+			System.out.println("Enter the amount to deposit:");
+			amt=sc.nextInt();
+			amount=amount+amt;
+			break;
+		
+		case 2:
+			System.out.println("Enter the amount to withdraw: ");
+			int withamt=sc.nextInt();
+			if(amount>=withamt)// checking condition for whether the amount is greater than withdraw amount
+			{ 
+				amount=amount-withamt;
+			}
+			else
+				System.out.println("Not enough amount to withdraw");
+			
+			break;
+		case 3:
+			System.out.println("Balance is: "+amount);
+			break;
+		default:
+			System.out.println("Please enter valid choice");
+			break;
+			
+		}
+		n1--;
+
+	}
+	}
+
+}
+
+OUTPUT:
+1.Deposit
+2.Withdraw
+3.Check balance
+Enter the choice:
+1
+Enter the amount to deposit:
+2000
+1.Deposit
+2.Withdraw
+3.Check balance
+Enter the choice:
+3
+Balance is: 4000
+1.Deposit
+2.Withdraw
+3.Check balance
+Enter the choice:
+2
+Enter the amount to withdraw: 
+200
+1.Deposit
+2.Withdraw
+3.Check balance
+Enter the choice:
+3
+Balance is: 3800
+
