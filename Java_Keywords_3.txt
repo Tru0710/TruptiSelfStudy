@@ -1,0 +1,106 @@
+Program1:
+package Labs;
+
+public class Java_Keywords_3 {
+
+	public static void main(String[] args) {
+		//Integer datatype
+				byte b=10; // Byte 
+				short t=1200;
+				int a=100220;
+				long l=120011223L;// Long datatype
+				
+				boolean c=true;// boolean
+				
+				float f=10.2f; //float datatype
+				double d=120.3445;// double datatype
+				
+				char c1='A';
+				
+				// Printing all the values of above all variables..
+				
+				System.out.println("Byte: "+b);
+				System.out.println("Short: "+t);
+				System.out.println("Integer: "+a);
+				System.out.println("Long: "+l);
+				
+				System.out.println("Boolean: "+c);
+				
+				System.out.println("Float: "+f);
+				System.out.println("Double: "+d);
+				
+				System.out.println("Char: "+c1);
+
+	}
+
+}
+
+OUTPUT:
+Byte: 10
+Short: 1200
+Integer: 100220
+Long: 120011223
+Boolean: true
+Float: 10.2
+Double: 120.3445
+Char: A
+
+
+Program 2:
+
+package Labs;
+
+import java.util.Scanner;
+
+public class StudentMarks_L3 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int DBMS_mark,DMS_m,Math_m,Java_m,CN_m;
+		int total=0;
+		System.out.println("***Enter the marks out of 100***");
+		//Taking the marks as input from user
+		System.out.println("Enter the marks of DBMS subject's: ");
+		DBMS_mark=sc.nextInt();
+		System.out.println("Enter the marks of DMS subject's: ");
+		DMS_m=sc.nextInt();
+		System.out.println("Enter the marks of Maths subject's: ");
+		Math_m=sc.nextInt();
+		System.out.println("Enter the marks of Java subject's: ");
+		Java_m=sc.nextInt();
+		System.out.println("Enter the marks of Computer Network subject's: ");
+		CN_m=sc.nextInt();
+	
+		//Calculating the total marks	
+		total= DBMS_mark+DMS_m+Math_m+Java_m+CN_m;
+		System.out.println("****Total Marks obtained****");
+		System.out.println(total); //printing the total
+		
+		//Typecasting is done to find the percentage
+		float t=(float)total;
+		
+		float per=(t/500)*100; //Finding percentage
+		
+		System.out.println("****Percentage obtained****");
+		System.out.println(per);
+	}
+
+}
+
+OUTPUT:
+***Enter the marks out of 100***
+Enter the marks of DBMS subject's: 
+70
+Enter the marks of DMS subject's: 
+60
+Enter the marks of Maths subject's: 
+50
+Enter the marks of Java subject's: 
+80
+Enter the marks of Computer Network subject's: 
+95
+****Total Marks obtained****
+355
+****Percentage obtained****
+71.0
+
