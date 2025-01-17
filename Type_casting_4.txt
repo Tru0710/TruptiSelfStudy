@@ -1,0 +1,114 @@
+Program1:
+
+package Labs;
+
+public class Type_Casting_4 {
+
+	public static void main(String[] args) {
+		int a=10;
+		double b=10203.44444444444;
+		short c=999;
+		float d=8093.9f;
+		short e=123;
+		
+		System.out.println("****Before type casting****");
+		System.out.println("Intger: "+a);
+		System.out.println("Double: "+b);
+		System.out.println("Short: "+c);
+		System.out.println("Float: "+d);
+		
+		//Implicit type casting 
+		double a1=a;
+		float a2=a;
+		System.out.println("***After the type casting***");
+		System.out.println("int to double: "+a1);
+		System.out.println("int to float: "+a2);
+		
+		//Explicit type casting
+		short a3= (short)d;
+		System.out.println("float to short: "+a3); //Here data might get loss becasuse we are going to convert int to short which is in memory size is small
+		
+		float a4=(float)b;
+		System.out.println("double to float: "+a4);//Here data might get loss in percision
+		
+		byte h=(byte)d;
+		System.out.println("short to byte: "+h);
+		
+		byte j=(byte)e;
+		System.out.println("short to byte: "+j);
+	}
+
+}
+
+OUTPUT:
+****Before type casting****
+Intger: 10
+Double: 10203.44444444444
+Short: 999
+Float: 8093.9
+***After the type casting***
+int to double: 10.0
+int to float: 10.0
+float to short: 8093
+double to float: 10203.444
+short to byte: -99
+short to byte: 123
+
+
+Program 2:
+
+package Labs;
+
+public class VariableDemo4 {
+
+	    // Instance variable (belongs to the object)
+	    int instanceVariable;
+
+	    // Static variable (belongs to the class)
+	    static int staticVariable;
+
+	    public void demonstrateVariables() {
+	        // Local variable (defined within a method and only accessible here)
+	        int localVariable = 10;
+
+	        // Displaying the values of the variables
+	        System.out.println("Local Variable: " + localVariable);
+
+	        // Accessing and modifying the instance variable
+	        instanceVariable = 20;
+	        System.out.println("Instance Variable: " + instanceVariable);
+
+	        // Accessing and modifying the static variable
+	        staticVariable = 30;
+	        System.out.println("Static Variable: " + staticVariable);
+	    }
+
+	    public static void main(String[] args) {
+	        // Create an object to access instance variables
+	        VariableDemo4 obj1 = new VariableDemo4();
+	        obj1.demonstrateVariables();
+
+	        // Create another object to show instance variables are unique to objects
+	        VariableDemo4 obj2 = new VariableDemo4();
+	        obj2.instanceVariable = 40;
+	        obj2.demonstrateVariables();
+
+	        // Static variables are shared among all objects
+	        System.out.println("Static Variable accessed via obj1: " + obj1.staticVariable);
+	        System.out.println("Static Variable accessed via obj2: " + obj2.staticVariable);
+	        System.out.println("Static Variable accessed via class: " + VariableDemo4.staticVariable);
+	    }
+	}
+
+
+OUTPUT:
+
+Local Variable: 10
+Instance Variable: 20
+Static Variable: 30
+Local Variable: 10
+Instance Variable: 20
+Static Variable: 30
+Static Variable accessed via obj1: 30
+Static Variable accessed via obj2: 30
+Static Variable accessed via class: 30
